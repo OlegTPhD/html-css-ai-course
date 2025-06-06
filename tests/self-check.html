@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Self-Check: HTML + CSS</title>
+  <link rel="stylesheet" href="../styles/custom.css" />
+</head>
+<body>
+  <header>
+      <h1>🌐 Self-Check: HTML + CSS</h1>
+      <section class="highlight">
+        <p>This section offers short self-check questions to quickly test your understanding of HTML and CSS topics covered in the course. Use it to review key concepts before taking the final assessment.</p>
+      </section>
+      <nav class="main-nav" aria-label="Course navigation">
+        <h2>📚 Navigation</h2>
+        <ul>
+          <li><a href="../index.html">🏠 Home</a></li>
+          <li><a href="../theory/main-content.html">📖 Theory</a></li>
+          <li><a href="../theory/examples.html">💡 Examples</a></li>
+          <li><a href="../theory/glossary.html">📘 Glossary</a></li>
+          <li><a href="../practice/tasks.html">🛠️ Practice Tasks</a></li>
+          <li><a href="../practice/labs.html">🧪 Lab Work</a></li>
+          <li><a href="../practice/projects.html">🎨 Creative Projects</a></li>
+          <li><a href="../tests/self-check.html">✅ Self-check</a></li>
+          <li><a href="../tests/assessment.html">📝 Final Assessment</a></li>
+          <li><a href="../resources/links.html">🔗 Additional Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>📋 Instructions</h2>
+        <p>Answer the following multiple-choice questions to test your understanding of HTML and CSS fundamentals. Click "Show Answer" to reveal the correct response.</p>
+      </section>
+
+      <section class="question">
+        <h3>1. What does HTML stand for?</h3>
+        <ul>
+          <li>A. Hyper Tool Markup Language</li>
+          <li>B. Hyperlinks and Text Markup Language</li>
+          <li>C. HyperText Markup Language</li>
+          <li>D. Home Tool Markup Language</li>
+        </ul>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer" style="display:none;">✅ Correct Answer: C. HyperText Markup Language</p>
+      </section>
+
+      <section class="question">
+        <h3>2. Which tag is used to link an external CSS file?</h3>
+        <ul>
+          <li>A. &lt;style&gt;</li>
+          <li>B. &lt;script&gt;</li>
+          <li>C. &lt;css&gt;</li>
+          <li>D. &lt;link&gt;</li>
+        </ul>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer" style="display:none;">✅ Correct Answer: D. &lt;link&gt;</p>
+      </section>
+
+      <section class="question">
+        <h3>3. What is the default display value of a &lt;div&gt; element?</h3>
+        <ul>
+          <li>A. inline</li>
+          <li>B. block</li>
+          <li>C. flex</li>
+          <li>D. inline-block</li>
+        </ul>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer" style="display:none;">✅ Correct Answer: B. block</p>
+      </section>
+
+      <section class="question">
+        <h3>4. What does the CSS property <code>margin: 0 auto;</code> usually do?</h3>
+        <ul>
+          <li>A. Sets the top and bottom margins to 0 and centers the element horizontally</li>
+          <li>B. Removes all margins</li>
+          <li>C. Sets margin to automatic values</li>
+          <li>D. Adds zero margin</li>
+        </ul>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer" style="display:none;">✅ Correct Answer: A. Sets the top and bottom margins to 0 and centers the element horizontally</p>
+      </section>
+
+      <section class="question">
+        <h3>5. Which media query targets devices with a max screen width of 768px?</h3>
+        <ul>
+          <li>A. @media screen and (min-width: 768px)</li>
+          <li>B. @media only screen and (width: 768px)</li>
+          <li>C. @media screen and (max-width: 768px)</li>
+          <li>D. @media all and (min-width: 768px)</li>
+        </ul>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer" style="display:none;">✅ Correct Answer: C. @media screen and (max-width: 768px)</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HTML-CSS-COURSE. Educational use only.</p>
+    </footer>
+
+  <script src="../scripts/interactive.js"></script>
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+    }
+  </script>
+  
+</body>
+</html>
