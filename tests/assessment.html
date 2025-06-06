@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Final Assessment</title>
+  <link rel="stylesheet" href="../styles/custom.css" />
+</head>
+<body>
+  <header>
+      <h1>📋 Final Assessment</h1>
+      <section class="highlight">
+        <p>Answer all the questions below to test your knowledge in HTML and CSS fundamentals and best practices. This final evaluation will help you consolidate what you've learned and identify areas for improvement.</p>
+      </section>
+      <nav class="main-nav" aria-label="Course navigation">
+        <h2>📚 Navigation</h2>
+        <ul>
+          <li><a href="../index.html">🏠 Home</a></li>
+          <li><a href="../theory/main-content.html">📖 Theory</a></li>
+          <li><a href="../theory/examples.html">💡 Examples</a></li>
+          <li><a href="../theory/glossary.html">📘 Glossary</a></li>
+          <li><a href="../practice/tasks.html">🛠️ Practice Tasks</a></li>
+          <li><a href="../practice/labs.html">🧪 Lab Work</a></li>
+          <li><a href="../practice/projects.html">🎨 Creative Projects</a></li>
+          <li><a href="../tests/self-check.html">✅ Self-check</a></li>
+          <li><a href="../tests/assessment.html">📝 Final Assessment</a></li>
+          <li><a href="../resources/links.html">🔗 Additional Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="assessment-form">
+        <div class="question">
+          <h2>1. What does HTML stand for?</h2>
+          <label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label><br>
+          <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label><br>
+          <label><input type="radio" name="q1" value="c"> HyperText Markup Language</label>
+        </div>
+
+        <div class="question">
+          <h2>2. Which tag is used to link an external CSS file?</h2>
+          <label><input type="radio" name="q2" value="a"> &lt;style&gt;</label><br>
+          <label><input type="radio" name="q2" value="b"> &lt;css&gt;</label><br>
+          <label><input type="radio" name="q2" value="c"> &lt;link&gt;</label>
+        </div>
+
+        <div class="question">
+          <h2>3. What is the correct CSS syntax to make all &lt;p&gt; elements red?</h2>
+          <label><input type="radio" name="q3" value="a"> p { color: red; }</label><br>
+          <label><input type="radio" name="q3" value="b"> p = red;</label><br>
+          <label><input type="radio" name="q3" value="c"> {p: red;}</label>
+        </div>
+
+        <div class="question">
+          <h2>4. Which property is used to change the background color in CSS?</h2>
+          <label><input type="radio" name="q4" value="a"> color</label><br>
+          <label><input type="radio" name="q4" value="b"> background-color</label><br>
+          <label><input type="radio" name="q4" value="c"> bgcolor</label>
+        </div>
+
+        <div class="question">
+          <h2>5. What is the default display value of a &lt;div&gt; element?</h2>
+          <label><input type="radio" name="q5" value="a"> inline</label><br>
+          <label><input type="radio" name="q5" value="b"> block</label><br>
+          <label><input type="radio" name="q5" value="c"> inline-block</label>
+        </div>
+
+        <div class="question">
+          <h2>6. What does the alt attribute in the &lt;img&gt; tag provide?</h2>
+          <label><input type="radio" name="q6" value="a"> Links to another image</label><br>
+          <label><input type="radio" name="q6" value="b"> Alternative text if image cannot be displayed</label><br>
+          <label><input type="radio" name="q6" value="c"> Image dimensions</label>
+        </div>
+
+        <div class="question">
+          <h2>7. Which CSS property controls the size of text?</h2>
+          <label><input type="radio" name="q7" value="a"> font-size</label><br>
+          <label><input type="radio" name="q7" value="b"> text-style</label><br>
+          <label><input type="radio" name="q7" value="c"> font-weight</label>
+        </div>
+
+        <div class="question">
+          <h2>8. What does the following CSS rule do?<br><code>div > p</code></h2>
+          <label><input type="radio" name="q8" value="a"> Selects all &lt;p&gt; elements</label><br>
+          <label><input type="radio" name="q8" value="b"> Selects all &lt;p&gt; elements inside &lt;div&gt; elements</label><br>
+          <label><input type="radio" name="q8" value="c"> Selects only direct &lt;p&gt; children of &lt;div&gt;</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+      </form>
+
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HTML-CSS-COURSE. Educational use only.</p>
+    </footer>
+
+    <script src="../scripts/interactive.js"></script>
+    <script>
+      function checkAnswers() {
+        const correct = {
+          q1: "c",
+          q2: "c",
+          q3: "a",
+          q4: "b",
+          q5: "b",
+          q6: "b",
+          q7: "a",
+          q8: "c"
+        };
+        let score = 0;
+        let total = Object.keys(correct).length;
+
+        for (let q in correct) {
+          const selected = document.querySelector(`input[name="${q}"]:checked`);
+          if (selected && selected.value === correct[q]) {
+            score++;
+          }
+        }
+
+        document.getElementById("result").textContent = `You scored ${score} out of ${total}`;
+      }
+    </script>
+  
+</body>
+</html>
