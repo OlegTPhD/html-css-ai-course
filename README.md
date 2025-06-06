@@ -80,7 +80,7 @@ HTML-CSS-COURSE/
 ## 🤖 AI Tools Used
 
 - **ChatGPT** – generating theory, tasks, glossary, tests
-- **DALL·E ** – visual illustrations, infographics
+- **DALL·E** – visual illustrations, infographics
 - **GitHub Copilot** – code generation and completion
 - **Tome / Gamma** – presentation content
 - **Markdown Guide** – formatting documentation
