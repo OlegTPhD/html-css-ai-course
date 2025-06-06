@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Theory: HTML + CSS for Building a Complete Web Project</title>
+  <link rel="stylesheet" href="../styles/custom.css" />
+</head>
+<body>
+  <header>
+      <h1>📖 Theory: HTML + CSS for Building a Complete Web Project</h1>
+      <section class="highlight">
+        <p>This module introduces students to the fundamentals and advanced concepts of HTML and CSS. It is structured for deep learning through practical examples and real-world applications.</p>
+      </section>
+      <nav class="main-nav" aria-label="Course navigation">
+        <h2>📚 Navigation</h2>
+        <ul>
+          <li><a href="../index.html">🏠 Home</a></li>
+          <li><a href="../theory/main-content.html">📖 Theory</a></li>
+          <li><a href="../theory/examples.html">💡 Examples</a></li>
+          <li><a href="../theory/glossary.html">📘 Glossary</a></li>
+          <li><a href="../practice/tasks.html">🛠️ Practice Tasks</a></li>
+          <li><a href="../practice/labs.html">🧪 Lab Work</a></li>
+          <li><a href="../practice/projects.html">🎨 Creative Projects</a></li>
+          <li><a href="../tests/self-check.html">✅ Self-check</a></li>
+          <li><a href="../tests/assessment.html">📝 Final Assessment</a></li>
+          <li><a href="../resources/links.html">🔗 Additional Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <section>
+      <h2>🧱 1. What is HTML?</h2>
+      <p><strong>HTML (HyperText Markup Language)</strong> is the standard language for creating the structure of web pages.</p>
+      <h3>🔹 Key Concepts:</h3>
+      <ul>
+        <li>Elements and tags: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, etc.</li>
+        <li>Attributes: <code>href</code>, <code>src</code>, <code>alt</code>, <code>id</code>, <code>class</code></li>
+        <li>Nesting and semantic structure</li>
+      </ul>
+      <h4>💡 Example:</h4>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>🎨 2. What is CSS?</h2>
+      <p><strong>CSS (Cascading Style Sheets)</strong> is used to style and visually format HTML content.</p>
+      <h3>🔹 Key Concepts:</h3>
+      <ul>
+        <li>Selectors: element, class (.class), ID (#id)</li>
+        <li>Properties: color, font-size, margin, padding, etc.</li>
+        <li>Cascading and specificity</li>
+        <li>Inline, internal, and external styles</li>
+      </ul>
+      <h4>💡 Example:</h4>
+      <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>📐 3. The Box Model</h2>
+      <p>Every HTML element is a box with four layers: <strong>Content → Padding → Border → Margin</strong></p>
+      <ul>
+        <li><strong>padding</strong>: space inside the element, around content</li>
+        <li><strong>border</strong>: visible frame</li>
+        <li><strong>margin</strong>: space outside the element</li>
+      </ul>
+      <pre><code>[ margin ]
+  [ border ]
+    [ padding ]
+      [ content ]</code></pre>
+    </section>
+
+    <section>
+      <h2>📌 4. Layout Techniques</h2>
+      <h3>🔹 Block vs Inline Elements:</h3>
+      <ul>
+        <li><strong>Block</strong>: <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code></li>
+        <li><strong>Inline</strong>: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></li>
+      </ul>
+      <h3>🔹 Layout Systems:</h3>
+      <ul>
+        <li><strong>float</strong>: legacy system</li>
+        <li><strong>position</strong>: static, relative, absolute, fixed, sticky</li>
+        <li><strong>flexbox</strong>: modern layout system</li>
+        <li><strong>grid</strong>: advanced layout system (optional)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>⚙️ 5. Responsive Design</h2>
+      <p>Responsive websites adapt to different screen sizes and devices.</p>
+      <h3>🔹 Tools and Techniques:</h3>
+      <p><strong>Media Queries:</strong></p>
+      <pre><code>@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}</code></pre>
+      <ul>
+        <li>Flexible units: %, em, rem, vw, vh</li>
+        <li>Mobile-first approach</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌐 6. Semantic HTML</h2>
+      <p>Use meaningful, descriptive tags for better structure and accessibility:</p>
+      <ul>
+        <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></li>
+      </ul>
+      <h3>✅ Benefits:</h3>
+      <ul>
+        <li>Accessibility</li>
+        <li>SEO</li>
+        <li>Clear code structure</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧰 7. File Structure of a Website</h2>
+      <pre><code>project/
+├── index.html
+├── about.html
+├── contact.html
+├── styles/
+│   └── main.css
+├── images/
+│   └── logo.png
+└── scripts/
+    └── script.js</code></pre>
+    </section>
+
+    <section>
+      <h2>🛠 8. Developer Tools</h2>
+      <ul>
+        <li><strong>VS Code</strong> – code editor</li>
+        <li><strong>Live Server</strong> – live preview in browser</li>
+        <li><strong>DevTools</strong> – inspect and debug pages</li>
+        <li><strong>Git & GitHub</strong> – version control and deployment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 9. Publishing with GitHub Pages</h2>
+      <h3>🔹 Steps:</h3>
+      <ol>
+        <li>Push your site to a public GitHub repository</li>
+        <li>Go to Settings → Pages</li>
+        <li>Choose the branch (main) and folder (/root or /docs)</li>
+        <li>GitHub provides a live link like: <br /><code>https://yourusername.github.io/your-project/</code></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>🎯 Summary</h2>
+      <ul>
+        <li>Write well-structured HTML documents</li>
+        <li>Apply CSS to style and layout pages</li>
+        <li>Build responsive designs for different devices</li>
+        <li>Publish your project using GitHub Pages</li>
+      </ul>
+      <p>➡️ Now you're ready to move on to examples and exercises to reinforce what you've learned.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML-CSS-COURSE. Educational use only.</p>
+  </footer>
+
+  <script src="../scripts/interactive.js"></script>
+  
+</body>
+</html>
