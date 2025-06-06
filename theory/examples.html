@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Practical Code Examples: HTML + CSS</title>
+  <link rel="stylesheet" href="../styles/custom.css" />
+</head>
+<body>
+  <header>
+      <h1>📘 Practical Code Examples: HTML + CSS</h1>
+      <section class="highlight">
+        <p>This module provides ready-to-use examples for common web development tasks using HTML and CSS. These examples are designed to help students understand how to structure code and apply styles effectively.</p>
+      </section>
+      <nav class="main-nav" aria-label="Course navigation">
+        <h2>📚 Navigation</h2>
+        <ul>
+          <li><a href="../index.html">🏠 Home</a></li>
+          <li><a href="../theory/main-content.html">📖 Theory</a></li>
+          <li><a href="../theory/examples.html">💡 Examples</a></li>
+          <li><a href="../theory/glossary.html">📘 Glossary</a></li>
+          <li><a href="../practice/tasks.html">🛠️ Practice Tasks</a></li>
+          <li><a href="../practice/labs.html">🧪 Lab Work</a></li>
+          <li><a href="../practice/projects.html">🎨 Creative Projects</a></li>
+          <li><a href="../tests/self-check.html">✅ Self-check</a></li>
+          <li><a href="../tests/assessment.html">📝 Final Assessment</a></li>
+          <li><a href="../resources/links.html">🔗 Additional Resources</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section>
+        
+
+        <h2>1. Basic HTML Page Structure</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Simple Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;This is a sample web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>2. Creating Links and Lists</h2>
+        <pre><code>&lt;h2&gt;Useful Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://example.com"&gt;Example Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Step One&lt;/li&gt;
+  &lt;li&gt;Step Two&lt;/li&gt;
+  &lt;li&gt;Step Three&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h2>3. Adding Images with Alt Text</h2>
+        <pre><code>&lt;img src="images/logo.png" alt="Site Logo" width="200" /&gt;</code></pre>
+
+        <h2>4. HTML Semantic Tags</h2>
+        <pre><code>&lt;header&gt;
+  &lt;h1&gt;My Blog&lt;/h1&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Post Title&lt;/h2&gt;
+    &lt;p&gt;This is an article.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+        <h2>5. Linking External CSS</h2>
+        <p><strong>HTML head:</strong></p>
+        <pre><code>&lt;link rel="stylesheet" href="styles/main.css" /&gt;</code></pre>
+        <p><strong>CSS file:</strong></p>
+        <pre><code>body {
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  font-family: Arial, sans-serif;
+}</code></pre>
+
+        <h2>6. Box Model and Spacing</h2>
+        <pre><code>.container {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #3498db;
+}</code></pre>
+
+        <h2>7. Flexbox Layout</h2>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;div class="flex-row"&gt;
+  &lt;div&gt;Left&lt;/div&gt;
+  &lt;div&gt;Right&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <p><strong>CSS:</strong></p>
+        <pre><code>.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+        <h2>8. Responsive Text with Media Query</h2>
+        <pre><code>h1 {
+  font-size: 36px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}</code></pre>
+
+        <h2>9. Button with Hover Effect</h2>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;button class="cta-button"&gt;Click Me&lt;/button&gt;</code></pre>
+        <p><strong>CSS:</strong></p>
+        <pre><code>.cta-button {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1f6392;
+}</code></pre>
+
+        <h2>10. GitHub Pages Deployment Tip</h2>
+        <pre><code>If your HTML file is named index.html and placed at the root of your repository, GitHub Pages will automatically render it at:
+
+https://yourusername.github.io/your-repo-name/
+
+Make sure your CSS and image paths are relative, not absolute.</code></pre>
+
+        <p><em>Use these examples as building blocks for your own mini projects and lab tasks.</em></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HTML-CSS-COURSE. Educational use only.</p>
+    </footer>
+
+  <script src="../scripts/interactive.js"></script>
+  
+</body>
+</html>
