@@ -91,7 +91,7 @@ HTML-CSS-COURSE/
 ## 🌐 GitHub Pages
 
 📌 Live version of the project:  
-👉 **https://yourusername.github.io/project-name/**  
+👉 **https://olegtphd.github.io/html-css-ai-course/**  
 _(Replace with your actual GitHub Pages link)_
 
 ---
