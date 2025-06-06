@@ -1,0 +1,212 @@
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+body {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background-color: #f9f9fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Header, main, footer spacing */
+header, main, footer {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 3rem;
+}
+
+/* Buttons for interactivity */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2c80b4;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f7fb;
+  color: #2c3e50;
+}
+
+/* Quiz correct/incorrect feedback */
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+}
+
+/* Navigation styling */
+.main-nav {
+  background-color: #ecf6fc;
+  padding: 1.5rem;
+  border-left: 5px solid #3498db;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.main-nav h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin: 0.5rem 0;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #3498db;
+  transform: translateX(4px);
+}
+
+/* Glossary terms */
+dl {
+  margin-top: 2rem;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Base styles for code blocks */
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+  border-left: 4px solid #3498db;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #2c3e50;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Optional: inline code style (if you ever use <code> inline) */
+p code, li code, h2 code {
+  background-color: #eef;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.95em;
+  color: #2d3e50;
+}
+
+li code {
+  display: inline-block;
+}
+
+.question { margin-bottom: 20px; padding: 15px; border-left: 4px solid #3498db; background: #f4f8fb; }
+    button { background-color: #3498db; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+    button:hover { background-color: #2980b9; }
+    #result { margin-top: 30px; font-weight: bold; font-size: 1.2em; }
+    
